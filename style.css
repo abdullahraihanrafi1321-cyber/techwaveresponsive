@@ -41,6 +41,14 @@ header{
     font-size: 1rem;
     font-weight: 500;
     color: white;
+    display: inline-block;
+    transition:
+        transform 0.3s ease,
+        text-shadow 0.3s ease;
+}
+.navlist li a:hover{
+    transform: scale(1.02) translateY(-2px);
+    text-shadow: 0 0 10px #00FF88;
 }
 .btn1{
     height: 44px;
@@ -54,7 +62,14 @@ header{
     background: linear-gradient(to bottom right, yellow, hotpink, purple);;
     color: white;
     border: none;
-    align-items: center;
+    align-items: center;;
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+.btn1:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00FF88;
 }
 .btn1 img{
     width: 20px;
@@ -285,6 +300,13 @@ header{
     flex-direction: column;
     gap: 12px;
     padding: 20px;
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+.ytvideo:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #00FF88;
 }
 .ytvideo iframe{
     border-radius: 15px 15px 0px 0px;
@@ -359,6 +381,14 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.abouthostul li:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00FF88;
+    cursor: pointer;
 }
 footer{
     background-image: url("assets/footer-bg.png");
