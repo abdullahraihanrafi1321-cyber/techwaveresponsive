@@ -250,14 +250,154 @@ header{
     color: white;
     opacity: 60%;
 }
-.episodes h2{
+.episodes{
+    width: 100%;
+    background-color: #1A0B2E;
+    padding: 120px 0;
+}
+.upper1,.lower1{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.upper1{
+    margin-bottom: 120px;
+}
+.upper1 h2{
+    color: white;
     font-size: 3rem;
-    color: #00FF88;
-    text-align: center;
     font-weight: bold;
 }
-
-
+.ytvideodiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.ytvideo{
+    max-width: 380px;
+    height: 440px;
+    background-color: #250D44;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+.ytvideo iframe{
+    border-radius: 15px 15px 0px 0px;
+    height: 214px;
+}
+.ytvideo h5{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.ytvideo p{
+    font-size: 1rem;
+    opacity: 60%;
+    color: white;
+    line-height: 24px;
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.time img{
+    width: 16.67px;
+    height: 16.67px;
+}
+.time p{
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 100%;
+}
+.lower1 h2{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hostarea{
+    max-width: 1200px;
+    border-radius: 40px;
+    background-color: #250D44;
+    display: flex;
+    gap: 24px;
+    padding: 40px;
+}
+.abouthost{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.abouthost h4{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.abouthost p{
+    color: white;
+    font-size: 1rem;
+    line-height: 24px;
+    opacity: 60%;
+}
+.abouthostul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 8px;
+}
+.abouthostul li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-image: url("assets/footer-bg.png");
+    padding: 120px 0px;
+}
+.footerdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    max-width: 544px;
+    color: white;
+    margin: 0px auto;
+}
+.footerdiv h1{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+.footerdiv ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 544px;
+    gap: 40px;
+    justify-content: center;
+}
+.footericon{
+    display: flex;
+    gap: 8px;
+}
+.footericon img{
+    width: 24px;
+    height: 24px;
+}
+.footerdiv p{
+    opacity: 60%;
+}
 
 @media screen and (max-width:576px) {
     .navlist{
@@ -318,5 +458,30 @@ header{
     "iv"
     "rs"
     ;
+    }
+    .ytvideodiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .upper1 h2{
+        font-size: 2rem;
+    }
+    .lower1 h2{
+        font-size: 2rem;
+    }
+    .hostarea{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 20px;
+    }
+    .hostarea>img{
+        height: 150px;
+        width: 150px;
+    }
+    .abouthost{
+        align-items: center;
+        text-align: center;
+    }
+    .footerdiv ul{
+        flex-wrap: wrap;
     }
 }
